@@ -328,8 +328,7 @@ body {
 /* HERO Section Stilleri (Görselli ve Yeşil Filtreli Güncelleme) */
 .hero-section {
     /* 1. GÖRSEL EKLEME: 'hero_bg.jpg' yerine kendi dosya adınızı yazın */
- background : url('/resimler/Ekran\ görüntüsü\ 2025-11-29\ 190731.png') no-repeat center center/cover;
-    
+ 
     
     color: var(--color-text-light);
     text-align: center;
@@ -345,7 +344,101 @@ body {
 }
 
 .hero-section h1 {
-    font-size: 3.5em; 
-    margin-bottom: 10px;
+    font-size: 10em; 
+    margin-bottom: 50px;
+    color: rgb(226, 6, 6);
+    
+}
+
+/* Genel Ayarlar */
+body {
+    margin: 0;
+    /* Genel sayfa arka planı da yeşil olabilir, bu isteğe bağlı */
+    /* background-color: #3cb371; */ 
+}
+
+/* 1. Ana Header'ı Görseldeki gibi Yeşil Arka Plan yapıyoruz */
+.main-header {
+    /* Görseldeki parlak yeşil arka plan */
+    background-color: #3cb371; 
+    
+    /* Navigasyon elemanlarını düzgünce yan yana dizer */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    color: white; /* Diğer menü yazıları beyaz olsun */
+}
+/* 2. Yeni Logo Metnimizin Stilleri */
+.header-logo-text {
+    /* Yazı Rengi: Parlak Turuncu */
+    color: #FF4500; 
+    
+    /* Yazı Tipi ve Boyut */
+    font-family: Arial, sans-serif;
+    font-size: 60px; /* Header için daha uygun bir boyut, görseldeki kadar devasa değil */
+    font-weight: 900; /* Ekstra kalın */
+    margin: 0; /* h1 etiketinin varsayılan margin'ini kaldırır */
+
+    /* Kontur Efekti (Text Shadow ile) */
+    text-shadow: 
+        -3px -3px 0 #000, 
+         3px -3px 0 #000, 
+        -3px  3px 0 #000, 
+         3px  3px 0 #000; 
+    
+    /* Alternatif ve daha temiz kontur (WebKit tabanlı tarayıcılar için) */
+    /* -webkit-text-stroke: 3px black; */
+}
+
+
+/* Diğer Navigasyon ve Sosyal Link Stilleri (önceki cevabımdan kopyalayabilirsiniz) */
+.main-nav ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li a {
+    padding: 0 15px; 
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+.main-nav li a:hover {
+    color: #ff4500;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.stilize-logo-metin {
+    /* Yazı Rengi: Parlak Turuncu */
+    color: #FF4500; 
+    
+    /* Yazı Tipi, Boyut ve Kalınlık */
+    font-family: Arial, sans-serif;
+    font-size: 32px; /* Header için ideal bir boyut */
+    font-weight: 900; 
+    
+    /* Kontur Efekti (Text Shadow ile) */
+    text-shadow: 
+        -2px -2px 0 #000, /* Sol üst gölge */
+         2px -2px 0 #000, /* Sağ üst gölge */
+        -2px  2px 0 #000, /* Sol alt gölge */
+         2px  2px 0 #000; /* Sağ alt gölge */
+}
+
+/* Navigasyon linkleri stilini de ekleyelim */
+.main-nav a, .social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
 }
