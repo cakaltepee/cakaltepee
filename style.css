@@ -341,10 +341,9 @@ body {
     
     /* 3. Metin Okunurluğu: Metin (Yeşilin Gücü, Kırmızının Tutkusu) daha net okunur */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
-}
 
-.hero-section h1 {
-    font-size: 3em; 
+    .hero-section h1 {
+    font-size: 2.7em; 
     margin-bottom: 50px;
     color: rgb(226, 6, 6);
     
@@ -442,5 +441,6 @@ body {
     font-weight: bold;
     padding: 0 10px;
 }
+
 
 
