@@ -1,0 +1,351 @@
+/* Genel Ayarlar */
+:root {
+    --color-primary: #C0392B; /* Canlı Kırmızı (Tutku) */
+    --color-secondary: #27AE60; /* Orman Yeşili (Güven) */
+    --color-text-light: #F4F6F7; /* Beyazımsı (Açık Metin) */
+    --color-text-dark: #34495E; /* Koyu Gri (Koyu Metin) */
+    --color-accent: #F1C40F; /* Altın Sarısı (Vurgu) */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-text-dark);
+    background-color: var(--color-text-light);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+/* HEADER Stilleri */
+.main-header {
+    background-color: var(--color-primary); /* Kırmızı Arka Plan */
+   background-color: var(--color-secondary); 
+    background-blend-mode: multiply; 
+    
+  
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: var(--color-text-light);
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: var(--color-secondary); /* Yeşil Vurgu */
+}
+
+
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-primary); /* Kırmızı Buton */
+    color: var(--color-text-light);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #A93226; /* Kırmızının koyu tonu */
+}
+
+/* BAŞKAN Mesajı Stilleri */
+.chairman-message {
+    padding: 40px 5%;
+    background-color: #f9f9f9;
+    border-left: 5px solid var(--color-secondary); /* Yeşil çizgi ile vurgu */
+}
+
+.signature {
+    font-style: italic;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+/* HABERLER Stilleri */
+.latest-news {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.news-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.news-card {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+    background-color: var(--color-text-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(192, 57, 43, 0.2); /* Kırmızı gölge */
+}
+
+.news-card h3 {
+    color: var(--color-primary);
+}
+
+/* FOOTER Stilleri */
+.main-footer {
+    background-color: var(--color-text-dark); /* Koyu Arka Plan */
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 20px 5%;
+    margin-top: 50px;
+}
+
+.sponsor-info {
+    color: var(--color-accent);
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Kadro Listesi Stilleri */
+.team-roster {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-roster h2 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 10px;
+}
+
+.position-group {
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.group-title {
+    background-color: var(--color-secondary); /* Yeşil Başlık */
+    color: var(--color-text-light);
+    padding: 15px 20px;
+    margin-top: 0;
+}
+
+.player-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.player-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+.player-item:last-child {
+    border-bottom: none;
+}
+
+.player-item:nth-child(even) {
+    background-color: #f5f5f5; /* Hafif çizgili arka plan */
+}
+
+.player-item:hover {
+    background-color: #ffeaea; /* Hover'da kırmızıya yakın vurgu */
+}
+
+.player-name {
+    font-weight: 700;
+    color: var(--color-text-dark);
+    flex-basis: 20%;
+}
+
+.player-pos {
+    font-style: italic;
+    color: var(--color-primary); /* Pozisyon kırmızı ile vurgu */
+    flex-basis: 30%;
+}
+
+.player-detail {
+    color: #666;
+    flex-basis: 50%;
+    text-align: right;
+}
+/* Genel Ayarlar ve Yeni Palet */
+:root {
+    --color-primary: #A91E1E; /* Koyu Kırmızı (Logodaki Kırmızı) */
+    --color-secondary: #1E8449; /* Tok Yeşil (Logodaki Yeşil) */
+    --color-text-light: #F4F6F7; /* Açık Metin */
+    --color-text-dark: #1C2833; /* Koyu Tema BG */
+    --color-accent: #F7DC6F; /* Soluk Altın */
+}
+
+body {
+    /* Ana arkaplanı biraz koyu yaparak logo temasını destekleyebiliriz */
+    background-color: var(--color-text-light); 
+    color: var(--color-text-dark);
+}
+
+/* HEADER Stilleri (Logo Boyutu) */
+.club-logo {
+    height: 70px; /* Logo boyutunu ayarlayın */
+    width: auto;
+    display: block;
+}
+
+.main-header {
+    background-color: var(--color-primary); /* Kırmızı Arka Plan */
+    /* ... Diğer stiller aynı kalır ... */
+}
+
+.main-nav a:hover {
+    background-color: var(--color-secondary); /* Yeşil Vurgu */
+}
+
+/* HERO Section Stilleri (Arka plan olarak logodaki Azrail figürünün silüeti kullanılabilir) */
+.hero-section {
+    background: var(--color-secondary); 
+    /* Diğer stil ve paddingler aynı kalır */
+}
+
+.cta-button {
+    background-color: var(--color-primary); 
+    /* ... */
+}
+
+/* Haber Başlıkları ve Önemli Vurgular */
+.news-card h3 {
+    color: var(--color-primary); /* Kırmızı Başlıklar */
+}
+
+.sponsor-info {
+    color: var(--color-accent); /* Altın Sarısı Sponsor Vurgusu */
+}
+/* =================================== */
+/* MOBİL UYUM (RESPONSIVE) BAŞLANGIÇI */
+/* =================================== */
+
+@media (max-width: 768px) {
+    
+    /* 1. BAŞLIK VE MENÜ DÜZENİ */
+    .main-header {
+        flex-direction: column; /* Dikey sıralama */
+        align-items: center;
+        padding: 10px 5%;
+    }
+
+    .club-logo {
+        height: 60px; /* Logo boyutu telefonda küçülür */
+        margin-bottom: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Menü linkleri alt alta gelir */
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main-nav li {
+        width: 100%;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+    
+    /* 2. ANA SAYFA BÖLÜMLERİ */
+    .hero-section {
+        padding: 60px 20px; /* Padding azaltılır */
+    }
+
+    .hero-section h1 {
+        font-size: 2em; /* Başlık boyutu küçülür */
+    }
+    
+    .cta-button {
+        padding: 12px 20px; /* Buton boyutu küçülür */
+        font-size: 0.9em;
+    }
+
+    /* 3. HABERLER DÜZENİ */
+    .news-grid {
+        flex-direction: column; /* Haber kartları alt alta sıralanır */
+    }
+    
+    /* 4. TAKIM KADROSU DÜZENİ */
+    .player-item {
+        flex-direction: column; /* Oyuncu detayları alt alta sıralanır */
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .player-name, .player-pos, .player-detail {
+        flex-basis: 100%; /* Her bir öğe tam genişlik kaplar */
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    
+    .player-detail {
+        font-size: 0.9em;
+        margin-top: 0;
+    }
+    
+    /* 5. FOOTER DÜZENİ */
+    .main-footer {
+        padding: 15px 5%;
+        font-size: 0.8em;
+    }
+}
+
+
+/* HERO Section Stilleri (Görselli ve Yeşil Filtreli Güncelleme) */
+.hero-section {
+    /* 1. GÖRSEL EKLEME: 'hero_bg.jpg' yerine kendi dosya adınızı yazın */
+ background : url('/resimler/Ekran\ görüntüsü\ 2025-11-29\ 190731.png') no-repeat center center/cover;
+    
+    
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 60px 10px; 
+    height: 280px; /* Görselin görünmesi için sabit yükseklik */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* 3. Metin Okunurluğu: Metin (Yeşilin Gücü, Kırmızının Tutkusu) daha net okunur */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.hero-section h1 {
+    font-size: 3.5em; 
+    margin-bottom: 10px;
+    color: white;
+}

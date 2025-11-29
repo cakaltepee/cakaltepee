@@ -1,0 +1,82 @@
+/* BAŞARILARIMIZ SAYFASI STİLLERİ */
+.achievements-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.achievements-section h2 {
+    color: var(--color-primary); /* Kırmızı Başlık */
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+/* ... (Önceki CSS kodlarınızda "BAŞARILARIMIZ SAYFASI STİLLERİ" başlığı altında) ... */
+
+.victory-gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; /* Boşlukları da biraz daraltalım */
+    justify-content: center;
+}
+
+.victory-card {
+    /* GÖRSELİN MAKSİMUM GENİŞLİĞİNİ AZALTIYORUZ (Örnek: 280px) */
+    max-width: 180px; 
+    width: 50%; 
+    background-color: #f9f9f9;
+    border: 3px solid var(--color-secondary); 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* ... Diğer stiller aynı kalabilir ... */
+
+/* MOBİL UYUM GÜNCELLEMESİ (Emin olmak için) */
+@media (min-width: 769px) {
+    /* Tablet ve Masaüstü görünümde (küçük kartlardan 3 tanesini yan yana sıralayalım) */
+    .victory-card {
+        /* Üç kartın yan yana sığması için hesaplama (Ör: 33.33% - boşluk) */
+        width: calc(33.33% - 20px); 
+        max-width: none;
+    }
+}
+
+
+.victory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(169, 30, 30, 0.4); /* Kırmızı vurgu */
+}
+
+.victory-card img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.victory-caption {
+    padding: 15px;
+    text-align: left;
+}
+
+.victory-caption h3 {
+    color: var(--color-primary); /* Kırmızı Başlık */
+    margin-top: 0;
+}
+
+.victory-caption p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+/* MOBİL UYUM GÜNCELLEMESİ (Emin olmak için) */
+@media (min-width: 769px) {
+    /* Tablet ve Masaüstü görünümde ikişerli sıralama */
+    .victory-card {
+        width: calc(50% - 30px); /* 2 kart yan yana ve boşluklar */
+        max-width: none;
+    }
+}

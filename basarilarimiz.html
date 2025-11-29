@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başarılarımız - Çakaltepe Spor Kulübü</title>
+    <link rel="stylesheet" href="b.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        </header>
+
+    <main>
+        <section class="achievements-section">
+            <div class="container">
+                <h2>👑 EFSANEVİ ZAFERLERİMİZ</h2>
+                <p class="section-description">Kırmızı ve Yeşil ruhun, sahadaki rakiplerine attığı gözdağı. "OUR CITY. OUR RULES."</p>
+
+                <div class="victory-gallery">
+                    
+                    <div class="victory-card">
+                        <img src="/resimler/Ekran görüntüsü 2025-11-29 172916.png" alt="Çakaltepe 16 - 11 Burhaniye SK" title="Destansı Galibiyet: 16-11">
+                        <div class="victory-caption">
+                            <h3>DESTAN: 16-11</h3>
+                            <p>Burhaniye Spor Kulübü'ne karşı alınan, skor tabelasını çatlatan galibiyet.</p>
+                        </div>
+                    </div>
+
+                    <div class="victory-card">
+                        <img src="/resimler/Ekran görüntüsü 2025-11-29 173019.png" alt="Çakaltepe 35 - 1 Burhaniye" title="Rekor Fark: 35-1">
+                        <div class="victory-caption">
+                            <h3>TARİHİ REKOR: 35-1</h3>
+                            <p>Burhaniye karşısında kırılan rekor fark. Rakip sahada mutlak hakimiyet!</p>
+                        </div>
+                    </div>
+
+                    <div class="victory-card">
+                        <img src="/resimler/Ekran görüntüsü 2025-11-29 173125.png" alt="Çakaltepe 30 - 10 Burhaniye" title="Ezik Geçiş: 30-10">
+                        <div class="victory-caption">
+                            <h3>EZİCİ GÜÇ: 30-10</h3>
+                            <p>Burhaniye Spor Kulübü'ne karşı bir başka skor şovu.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="victory-card">
+                        <img src="/resimler/Ekran görüntüsü 2025-11-29 173217.png" alt="Çakaltepe 14 - 12 Dortmund Beylerbeyi" title="Uluslararası Başarı: 14-12">
+                        <div class="victory-caption">
+                            <h3>DORTMUND'A MEYDAN OKUMA: 14-12</h3>
+                            <p>Dortmund Beylerbeyi'ne karşı alınan prestijli galibiyet!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        </footer>
+    
+
+        <style>
+            /* BAŞARILARIMIZ SAYFASI STİLLERİ */
+.achievements-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.achievements-section h2 {
+    color: var(--color-primary); /* Kırmızı Başlık */
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+/* ... (Önceki CSS kodlarınızda "BAŞARILARIMIZ SAYFASI STİLLERİ" başlığı altında) ... */
+
+.victory-gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; /* Boşlukları da biraz daraltalım */
+    justify-content: center;
+}
+
+.victory-card {
+    /* GÖRSELİN MAKSİMUM GENİŞLİĞİNİ AZALTIYORUZ (Örnek: 280px) */
+    max-width: 180px; 
+    width: 50%; 
+    background-color: #f9f9f9;
+    border: 3px solid var(--color-secondary); 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* ... Diğer stiller aynı kalabilir ... */
+
+/* MOBİL UYUM GÜNCELLEMESİ (Emin olmak için) */
+@media (min-width: 769px) {
+    /* Tablet ve Masaüstü görünümde (küçük kartlardan 3 tanesini yan yana sıralayalım) */
+    .victory-card {
+        /* Üç kartın yan yana sığması için hesaplama (Ör: 33.33% - boşluk) */
+        width: calc(33.33% - 20px); 
+        max-width: none;
+    }
+}
+
+
+.victory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(169, 30, 30, 0.4); /* Kırmızı vurgu */
+}
+
+.victory-card img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.victory-caption {
+    padding: 15px;
+    text-align: left;
+}
+
+.victory-caption h3 {
+    color: var(--color-primary); /* Kırmızı Başlık */
+    margin-top: 0;
+}
+
+.victory-caption p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+/* MOBİL UYUM GÜNCELLEMESİ (Emin olmak için) */
+@media (min-width: 769px) {
+    /* Tablet ve Masaüstü görünümde ikişerli sıralama */
+    .victory-card {
+        width: calc(50% - 30px); /* 2 kart yan yana ve boşluklar */
+        max-width: none;
+    }
+}
+        </style>
+</body>
+</html>
